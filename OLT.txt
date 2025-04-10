@@ -1,0 +1,3187 @@
+
+
+5608T_BaraN(config)#
+
+5608T_BaraN(config)#
+
+5608T_BaraN(config)#
+
+5608T_BaraN(config)#
+
+5608T_BaraN(config)#telnet 172.43.3.218
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.218
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.218 ...
+  Connected to 172.43.3.218 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL-5*24>
+
+  User root has used a default password. Change the password in time.
+
+5626FL-5*24>enable
+
+5626FL-5*24#config
+
+5626FL-5*24(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif430        172.43.0.17/24        up          up
+vlanif433        172.43.3.218/24       up          up
+vlanif800        172.43.8.199/24       up          up
+
+5626FL-5*24(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.8.199
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.8.199
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.8.199 ...
+  Connected to 172.43.8.199 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+  -----------------------------------------------------------------------------
+  User last login information:
+  -----------------------------------------------------------------------------
+  Access Type : Telnet
+  IP-Address  : 172.43.3.250
+  Login  Time : 2023-09-19 17:31:21+08:00
+  Logout Time : 2023-09-19 17:31:45+08:00
+  -----------------------------------------------------------------------------
+
+5626FL-5*24>
+
+  User root has used a default password. Change the password in time.
+
+5626FL-5*24>
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.8.199
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.8.199
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.8.199 ...
+  Connected to 172.43.8.199 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+  -----------------------------------------------------------------------------
+  All user fail login information:
+  -----------------------------------------------------------------------------
+  Access Type IP-Address           Time                          Login Times
+  -----------------------------------------------------------------------------
+  SSH         172.43.0.250 ssh     2023-09-19 15:50:39+08:00               4
+  -----------------------------------------------------------------------------
+
+5626FL-4*24>
+
+  User root has used a default password. Change the password in time.
+
+5626FL-4*24>enable
+
+5626FL-4*24#config
+
+5626FL-4*24(config)#interface vlanif 433
+
+5626FL-4*24(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL-4*24(config-if-vlanif433)#quit
+
+5626FL-4*24(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL-4*24(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL-4*24(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.219
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.219
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.219 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.218
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.218
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.218 ...
+  Connected to 172.43.3.218 ...
+>>User name:root
+>>User password:
+  Reenter times have reached the upper limit.
+>>User name:
+  Username or Domain invalid!
+>>User name:
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#
+
+5608T_BaraN(config)#
+
+5608T_BaraN(config)#
+
+5608T_BaraN(config)#telnet 172.43.3.220
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.220
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.220 ...
+  Connected to 172.43.3.220 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5625FL-3*16-1>
+
+  User root has used a default password. Change the password in time.
+
+5625FL-3*16-1>enable
+
+5625FL-3*16-1#config
+
+5625FL-3*16-1(config)#interface vlanif 433
+
+5625FL-3*16-1(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.221
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.221
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.221 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#ping 172.43.3.221
+  PING 172.43.3.221: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.221 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.220
+  PING 172.43.3.220: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.220 ping statistics ---
+    4 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.219
+  PING 172.43.3.219: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.219 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.218
+  PING 172.43.3.218: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.218: bytes=56 Sequence=1 ttl=255 time=8 ms
+    Reply from 172.43.3.218: bytes=56 Sequence=2 ttl=255 time=7 ms
+    Reply from 172.43.3.218: bytes=56 Sequence=3 ttl=255 time=15 ms
+    Reply from 172.43.3.218: bytes=56 Sequence=4 ttl=255 time=9 ms
+    Reply from 172.43.3.218: bytes=56 Sequence=5 ttl=255 time=26 ms
+
+  --- 172.43.3.218 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 7/13/26 ms
+
+
+5608T_BaraN(config)#telnet 172.43.3.218
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.218
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.218 ...
+  Connected to 172.43.3.218 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+  -----------------------------------------------------------------------------
+  User last login information:
+  -----------------------------------------------------------------------------
+  Access Type : Telnet
+  IP-Address  : 172.43.8.254
+  Login  Time : 2023-09-19 17:32:01+08:00
+  Logout Time : 2023-09-19 17:33:48+08:00
+  -----------------------------------------------------------------------------
+  -----------------------------------------------------------------------------
+  User fail login information:
+  -----------------------------------------------------------------------------
+  Last Access Type    : Telnet
+  Last IP-Address     : 172.43.3.250
+  Last Login Time     : 2023-09-19 17:33:27+08:00
+  Login Failure Times : 1
+  -----------------------------------------------------------------------------
+  -----------------------------------------------------------------------------
+  All user fail login information:
+  -----------------------------------------------------------------------------
+  Access Type IP-Address           Time                          Login Times
+  -----------------------------------------------------------------------------
+  Telnet      172.43.3.250         2023-09-19 17:33:34+08:00               2
+  -----------------------------------------------------------------------------
+
+5626FL-5*24>
+
+  User root has used a default password. Change the password in time.
+
+5626FL-5*24>enable
+
+5626FL-5*24#config
+
+5626FL-5*24(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif430        172.43.0.17/24        up          up
+vlanif433        172.43.3.218/24       up          up
+vlanif800        172.43.8.199/24       up          up
+
+5626FL-5*24(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.17
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.17
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.17 ...
+  Connected to 172.43.0.17 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+  -----------------------------------------------------------------------------
+  User last login information:
+  -----------------------------------------------------------------------------
+  Access Type : Telnet
+  IP-Address  : 172.43.3.250
+  Login  Time : 2023-09-19 17:37:15+08:00
+  Logout Time : 2023-09-19 17:37:44+08:00
+  -----------------------------------------------------------------------------
+  -----------------------------------------------------------------------------
+  All user fail login information:
+  -----------------------------------------------------------------------------
+  Access Type IP-Address           Time                          Login Times
+  -----------------------------------------------------------------------------
+  Telnet      172.43.3.250         2023-09-19 17:33:34+08:00               2
+  -----------------------------------------------------------------------------
+
+5626FL-5*24>
+
+  User root has used a default password. Change the password in time.
+
+5626FL-5*24>enable
+
+5626FL-5*24#config
+
+5626FL-5*24(config)#interface vlanif 433
+
+5626FL-5*24(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL-5*24(config-if-vlanif433)#quit
+
+5626FL-5*24(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL-5*24(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL-5*24(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.18
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.18
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.18 ...
+  Connected to 172.43.0.18 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL0-24>
+
+  User root has used a default password. Change the password in time.
+
+5626FL0-24>enable
+
+5626FL0-24#config
+
+5626FL0-24(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 5
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 5
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif430        172.43.0.18/24        up          up
+vlanif433        172.43.3.236/24       up          up
+vlanif436        172.43.6.223/24       up          up
+vlanif800        172.43.8.203/24       up          up
+
+5626FL0-24(config)#interface vlanif 433
+
+5626FL0-24(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL0-24(config-if-vlanif433)#sa
+                                ^
+  % Unknown command, the error locates at '^'
+
+5626FL0-24(config-if-vlanif433)#
+
+5626FL0-24(config-if-vlanif433)#quit
+
+5626FL0-24(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL0-24(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL0-24(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.19
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.19
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.19 ...
+  Connected to 172.43.0.19 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2012. All rights reserved.
+
+
+5626FL0>enable
+
+5626FL0#config
+
+5626FL0(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+Interface                   IP Address      Physical Protocol Description
+meth0                       10.11.104.2     down     down     HUAWEI, SmartAX
+null0                       unassigned      up       up(s)    HUAWEI, SmartAX
+vlanif430                   172.43.0.19     up       up       HUAWEI, SmartAX
+vlanif433                   172.43.3.222    up       up       HUAWEI, SmartAX
+vlanif800                   172.43.8.247    up       up       HUAWEI, SmartAX
+
+5626FL0(config)#interface vlanif 433
+
+5626FL0(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL0(config-if-vlanif433)#quit
+
+5626FL0(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL0(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL0(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.20
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.20
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.20 ...
+  Connected to 172.43.0.20 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL1*24>
+
+  User root has used a default password. Change the password in time.
+
+5626FL1*24>enable
+
+5626FL1*24#config
+
+5626FL1*24(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif430        172.43.0.20/24        up          up
+vlanif433        172.43.3.238/24       up          up
+vlanif800        172.43.8.204/24       up          up
+
+5626FL1*24(config)#interface vlanif 433
+
+5626FL1*24(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL1*24(config-if-vlanif433)#quit
+
+5626FL1*24(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL1*24(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL1*24(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.21
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.21
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.21 ...
+  Connected to 172.43.0.21 ...
+>>User name:roo
+>>User password:
+  Username or password invalid.
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+  -----------------------------------------------------------------------------
+  User last login information:
+  -----------------------------------------------------------------------------
+  Access Type : Telnet
+  IP-Address  : 172.43.3.250
+  Login  Time : 2023-09-19 15:11:53+08:00
+  Logout Time : 2023-09-19 15:28:29+08:00
+  -----------------------------------------------------------------------------
+  -----------------------------------------------------------------------------
+  All user fail login information:
+  -----------------------------------------------------------------------------
+  Access Type IP-Address           Time                          Login Times
+  -----------------------------------------------------------------------------
+  Telnet      172.43.0.254         2023-09-19 17:42:35+08:00               1
+  -----------------------------------------------------------------------------
+
+Edari>
+
+  User root has used a default password. Change the password in time.
+
+Edari>enable
+
+Edari#config
+
+Edari(config)#display ip interface  brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface  brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 5
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 5
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif430        172.43.0.21/24        up          up
+vlanif433        172.43.3.237/24       up          up
+vlanif436        172.43.6.227/24       up          up
+vlanif800        172.43.8.229/24       up          up
+
+Edari(config)#interface vlanif 433
+
+Edari(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+Edari(config-if-vlanif433)#quit
+
+Edari(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+Edari(config)#
+  It will take several minutes to save configuration file, please wait...
+
+Edari(config)#
+  Configuration file had been saved successfully
+  Note: The configuration file will take effect after being activated
+
+Edari(config)#
+  The data is being saved, please wait a moment...
+
+Edari(config)#
+
+Edari(config)#
+  1 [2023-09-19 17:43:40+08:00]:The percentage of saved data on 0 slot's control board is: 21%
+
+Edari(config)#
+  1 [2023-09-19 17:43:43+08:00]:The percentage of saved data on 0 slot's control board is: 66%
+
+Edari(config)#
+  1 [2023-09-19 17:43:46+08:00]:The percentage of saved data on 0 slot's control board is: 72%
+
+Edari(config)#
+  1 [2023-09-19 17:43:49+08:00]:The percentage of saved data on 0 slot's control board is: 96%
+
+Edari(config)#
+  1 [2023-09-19 17:43:52+08:00]:The percentage of saved data on 0 slot's control board is: 98%
+
+Edari(config)#
+
+Edari(config)#
+  1 [2023-09-19 17:43:54+08:00]:The data of 0 slot's control board is saved
+completely
+
+Edari(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.22
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.22
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.22 ...
+  Connected to 172.43.0.22 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL1*24>
+
+  User root has used a default password. Change the password in time.
+
+5626FL1*24>enable
+
+5626FL1*24#config
+
+5626FL1*24(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif430        172.43.0.22/24        up          up
+vlanif436        172.43.6.205/24       up          up
+vlanif800        172.43.8.205/24       up          up
+
+5626FL1*24(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.23
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.23
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.23 ...
+  Connected to 172.43.0.23 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL3*24-1>
+
+  User root has used a default password. Change the password in time.
+
+5626FL3*24-1>enable
+
+5626FL3*24-1#cin
+             ^
+  % Unknown command, the error locates at '^'
+
+5626FL3*24-1#config
+
+5626FL3*24-1(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif430        172.43.0.23/24        up          up
+vlanif436        172.43.6.206/24       up          up
+vlanif800        172.43.8.237/24       up          up
+
+5626FL3*24-1(config)#
+
+5626FL3*24-1(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.24
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.24
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.24 ...
+  Connected to 172.43.0.24 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL3*24-2>
+
+  User root has used a default password. Change the password in time.
+
+5626FL3*24-2>enable
+
+5626FL3*24-2#config
+
+5626FL3*24-2(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif430        172.43.0.24/24        up          up
+vlanif436        172.43.6.207/24       up          up
+vlanif800        172.43.8.238/24       up          up
+
+5626FL3*24-2(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.25
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.25
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.25 ...
+  Connected to 172.43.0.25 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2012. All rights reserved.
+
+
+5626FL3*16>enable
+
+5626FL3*16#config
+
+5626FL3*16(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+Interface                   IP Address      Physical Protocol Description
+meth0                       10.11.104.2     down     down     HUAWEI, SmartAX
+null0                       unassigned      up       up(s)    HUAWEI, SmartAX
+vlanif430                   172.43.0.25     up       up       HUAWEI, SmartAX
+vlanif433                   172.43.3.224    up       up       CCTV
+
+5626FL3*16(config)#interface vlanif 433
+
+5626FL3*16(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL3*16(config-if-vlanif433)#quit
+
+5626FL3*16(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL3*16(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL3*16(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.28
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.28
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.28 ...
+  Connected to 172.43.0.28 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL5*16>
+
+  User root has used a default password. Change the password in time.
+
+5626FL5*16>enable
+
+5626FL5*16#config
+
+5626FL5*16(config)#interface VLanif 433
+
+5626FL5*16(config-if-vlanif433)#UNDo IP ADdress
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          UNDo IP ADdress
+
+5626FL5*16(config-if-vlanif433)#quit
+
+5626FL5*16(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL5*16(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL5*16(config)#
+  Configuration file had been saved successfully
+  Note: The configuration file will take effect after being activated
+
+5626FL5*16(config)#
+  The data is being saved, please wait a moment...
+
+5626FL5*16(config)#
+
+5626FL5*16(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.31
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.31
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.31 ...
+  Connected to 172.43.0.31 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL7*16>
+
+  User root has used a default password. Change the password in time.
+
+5626FL7*16>enable
+
+5626FL7*16#config
+
+5626FL7*16(config)#interface vlanif 433
+
+5626FL7*16(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL7*16(config-if-vlanif433)#quit
+
+5626FL7*16(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL7*16(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL7*16(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.34
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.34
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.34 ...
+  Connected to 172.43.0.34 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL9*16>
+
+  User root has used a default password. Change the password in time.
+
+5626FL9*16>enable
+
+5626FL9*16#config
+
+5626FL9*16(config)#interface vlanif 433
+
+5626FL9*16(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL9*16(config-if-vlanif433)#quit
+
+5626FL9*16(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL9*16(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL9*16(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.37
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.37
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.37 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#ping 172.43.3.228
+  PING 172.43.3.228: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.228: bytes=56 Sequence=1 ttl=64 time=8 ms
+    Reply from 172.43.3.228: bytes=56 Sequence=2 ttl=64 time=3 ms
+    Reply from 172.43.3.228: bytes=56 Sequence=3 ttl=64 time=6 ms
+    Reply from 172.43.3.228: bytes=56 Sequence=4 ttl=64 time=7 ms
+    Reply from 172.43.3.228: bytes=56 Sequence=5 ttl=64 time=8 ms
+
+  --- 172.43.3.228 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 3/6/8 ms
+
+
+5608T_BaraN(config)#ping 172.43.0.37
+  PING 172.43.0.37: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.0.37 ping statistics ---
+    5 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.40
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.40
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.40 ...
+  Connected to 172.43.0.40 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+  -----------------------------------------------------------------------------
+  User last login information:
+  -----------------------------------------------------------------------------
+  Access Type : Telnet
+  IP-Address  : 172.43.3.250
+  Login  Time : 2023-09-19 16:31:39+08:00
+  Logout Time : 2023-09-19 16:36:40+08:00
+  -----------------------------------------------------------------------------
+
+MDU-FL13*16>
+
+  User root has used a default password. Change the password in time.
+
+MDU-FL13*16>enable
+
+MDU-FL13*16#config
+
+MDU-FL13*16(config)#interface vlanif 433
+
+MDU-FL13*16(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+MDU-FL13*16(config-if-vlanif433)#quit
+
+MDU-FL13*16(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+MDU-FL13*16(config)#
+  It will take several minutes to save configuration file, please wait...
+
+MDU-FL13*16(config)#
+  Configuration file had been saved successfully
+  Note: The configuration file will take effect after being activated
+
+MDU-FL13*16(config)#
+  The data is being saved, please wait a moment...
+
+MDU-FL13*16(config)#
+
+MDU-FL13*16(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.43
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.43
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.43 ...
+  Connected to 172.43.0.43 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL15*16>
+
+  User root has used a default password. Change the password in time.
+
+5626FL15*16>enable
+
+5626FL15*16#config
+
+5626FL15*16(config)#interface vlanif 433
+
+5626FL15*16(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL15*16(config-if-vlanif433)#quit
+
+5626FL15*16(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL15*16(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL15*16(config)#
+  Configuration file had been saved successfully
+  Note: The configuration file will take effect after being activated
+
+5626FL15*16(config)#
+  The data is being saved, please wait a moment...
+
+5626FL15*16(config)#
+
+5626FL15*16(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.46
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.46
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.46 ...
+  Connected to 172.43.0.46 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL17*16>
+
+  User root has used a default password. Change the password in time.
+
+5626FL17*16>enable
+
+5626FL17*16#config
+
+5626FL17*16(config)#interface vlanif 433
+
+5626FL17*16(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL17*16(config-if-vlanif433)#quit
+
+5626FL17*16(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL17*16(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL17*16(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.49
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.49
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.49 ...
+  Connected to 172.43.0.49 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL19*16>
+
+  User root has used a default password. Change the password in time.
+
+5626FL19*16>enable
+
+5626FL19*16#config
+
+5626FL19*16(config)#interface vlanif 433
+
+5626FL19*16(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL19*16(config-if-vlanif433)#quit
+
+5626FL19*16(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL19*16(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL19*16(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.56
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.56
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.56 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.235
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.235
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.235 ...
+  Connected to 172.43.3.235 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL25*24>
+
+  User root has used a default password. Change the password in time.
+
+5626FL25*24>enable
+
+5626FL25*24#config
+
+5626FL25*24(config)#interface vlanif 433
+
+5626FL25*24(config-if-vlanif433)#quit
+
+5626FL25*24(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 3
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 3
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif433        172.43.3.235/24       up          up
+vlanif800        172.43.8.228/24       up          up
+
+5626FL25*24(config)#
+
+5626FL25*24(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.8.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.8.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.8.228 ...
+  Connected to 172.43.8.228 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+  -----------------------------------------------------------------------------
+  User last login information:
+  -----------------------------------------------------------------------------
+  Access Type : Telnet
+  IP-Address  : 172.43.3.250
+  Login  Time : 2023-09-19 17:55:25+08:00
+  Logout Time : 2023-09-19 17:55:52+08:00
+  -----------------------------------------------------------------------------
+
+5626FL25*24>
+
+  User root has used a default password. Change the password in time.
+
+5626FL25*24>enable
+
+5626FL25*24#config
+
+5626FL25*24(config)#interface vlanif 433
+
+5626FL25*24(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL25*24(config-if-vlanif433)#quit
+
+5626FL25*24(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL25*24(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL25*24(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#ping 172.43.3.215
+  PING 172.43.3.215: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.215 ping statistics ---
+    4 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.216
+  PING 172.43.3.216: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.216: bytes=56 Sequence=1 ttl=64 time=6 ms
+    Reply from 172.43.3.216: bytes=56 Sequence=2 ttl=64 time=7 ms
+    Reply from 172.43.3.216: bytes=56 Sequence=3 ttl=64 time=6 ms
+    Reply from 172.43.3.216: bytes=56 Sequence=4 ttl=64 time=7 ms
+    Reply from 172.43.3.216: bytes=56 Sequence=5 ttl=64 time=8 ms
+
+  --- 172.43.3.216 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 6/6/8 ms
+
+
+5608T_BaraN(config)#telnet 172.43.3.216
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.216
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.216 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.217
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.217
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.217 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#ping 172.43.3.217
+  PING 172.43.3.217: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.217: bytes=56 Sequence=1 ttl=64 time=5 ms
+    Reply from 172.43.3.217: bytes=56 Sequence=2 ttl=64 time=8 ms
+    Reply from 172.43.3.217: bytes=56 Sequence=3 ttl=64 time=8 ms
+    Reply from 172.43.3.217: bytes=56 Sequence=4 ttl=64 time=7 ms
+    Reply from 172.43.3.217: bytes=56 Sequence=5 ttl=64 time=8 ms
+
+  --- 172.43.3.217 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 5/7/8 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.218
+  PING 172.43.3.218: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.218 ping statistics ---
+    5 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.219
+  PING 172.43.3.219: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.219 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.220
+  PING 172.43.3.220: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+
+  --- 172.43.3.220 ping statistics ---
+    2 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.221
+  PING 172.43.3.221: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.221 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.222
+  PING 172.43.3.222: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.222 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.223
+  PING 172.43.3.223: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.223: bytes=56 Sequence=1 ttl=64 time=8 ms
+    Reply from 172.43.3.223: bytes=56 Sequence=2 ttl=64 time=8 ms
+    Reply from 172.43.3.223: bytes=56 Sequence=3 ttl=64 time=5 ms
+    Reply from 172.43.3.223: bytes=56 Sequence=4 ttl=64 time=2 ms
+    Reply from 172.43.3.223: bytes=56 Sequence=5 ttl=64 time=8 ms
+
+  --- 172.43.3.223 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/6/8 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.224
+  PING 172.43.3.224: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.224: bytes=56 Sequence=1 ttl=64 time=2 ms
+    Reply from 172.43.3.224: bytes=56 Sequence=2 ttl=64 time=8 ms
+    Reply from 172.43.3.224: bytes=56 Sequence=3 ttl=64 time=5 ms
+    Reply from 172.43.3.224: bytes=56 Sequence=4 ttl=64 time=7 ms
+    Reply from 172.43.3.224: bytes=56 Sequence=5 ttl=64 time=3 ms
+
+  --- 172.43.3.224 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/5/8 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.225
+  PING 172.43.3.225: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.225: bytes=56 Sequence=1 ttl=64 time=7 ms
+    Reply from 172.43.3.225: bytes=56 Sequence=2 ttl=64 time=12 ms
+    Reply from 172.43.3.225: bytes=56 Sequence=3 ttl=64 time=3 ms
+    Reply from 172.43.3.225: bytes=56 Sequence=4 ttl=64 time=8 ms
+    Reply from 172.43.3.225: bytes=56 Sequence=5 ttl=64 time=7 ms
+
+  --- 172.43.3.225 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 3/7/12 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.226
+  PING 172.43.3.226: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.226: bytes=56 Sequence=1 ttl=64 time=3 ms
+    Reply from 172.43.3.226: bytes=56 Sequence=2 ttl=64 time=3 ms
+    Reply from 172.43.3.226: bytes=56 Sequence=3 ttl=64 time=4 ms
+    Reply from 172.43.3.226: bytes=56 Sequence=4 ttl=64 time=3 ms
+    Reply from 172.43.3.226: bytes=56 Sequence=5 ttl=64 time=3 ms
+
+  --- 172.43.3.226 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 3/3/4 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.227
+  PING 172.43.3.227: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.227: bytes=56 Sequence=1 ttl=64 time=2 ms
+    Reply from 172.43.3.227: bytes=56 Sequence=2 ttl=64 time=3 ms
+    Reply from 172.43.3.227: bytes=56 Sequence=3 ttl=64 time=3 ms
+    Reply from 172.43.3.227: bytes=56 Sequence=4 ttl=64 time=3 ms
+    Reply from 172.43.3.227: bytes=56 Sequence=5 ttl=64 time=2 ms
+
+  --- 172.43.3.227 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/2/3 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.228
+  PING 172.43.3.228: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.228: bytes=56 Sequence=1 ttl=64 time=9 ms
+    Reply from 172.43.3.228: bytes=56 Sequence=2 ttl=64 time=6 ms
+    Reply from 172.43.3.228: bytes=56 Sequence=3 ttl=64 time=6 ms
+    Reply from 172.43.3.228: bytes=56 Sequence=4 ttl=64 time=13 ms
+    Reply from 172.43.3.228: bytes=56 Sequence=5 ttl=64 time=7 ms
+
+  --- 172.43.3.228 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 6/8/13 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.229
+  PING 172.43.3.229: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.229 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.230
+  PING 172.43.3.230: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.230: bytes=56 Sequence=1 ttl=64 time=8 ms
+    Reply from 172.43.3.230: bytes=56 Sequence=2 ttl=64 time=7 ms
+    Reply from 172.43.3.230: bytes=56 Sequence=3 ttl=64 time=16 ms
+    Reply from 172.43.3.230: bytes=56 Sequence=4 ttl=64 time=8 ms
+    Reply from 172.43.3.230: bytes=56 Sequence=5 ttl=64 time=7 ms
+
+  --- 172.43.3.230 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 7/9/16 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.231
+  PING 172.43.3.231: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.231: bytes=56 Sequence=1 ttl=64 time=11 ms
+    Reply from 172.43.3.231: bytes=56 Sequence=2 ttl=64 time=7 ms
+    Reply from 172.43.3.231: bytes=56 Sequence=3 ttl=64 time=11 ms
+    Reply from 172.43.3.231: bytes=56 Sequence=4 ttl=64 time=4 ms
+    Reply from 172.43.3.231: bytes=56 Sequence=5 ttl=64 time=2 ms
+
+  --- 172.43.3.231 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/7/11 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.232
+  PING 172.43.3.232: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+
+  --- 172.43.3.232 ping statistics ---
+    2 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.233
+  PING 172.43.3.233: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.233: bytes=56 Sequence=1 ttl=255 time=18 ms
+    Reply from 172.43.3.233: bytes=56 Sequence=2 ttl=255 time=7 ms
+    Reply from 172.43.3.233: bytes=56 Sequence=3 ttl=255 time=95 ms
+    Reply from 172.43.3.233: bytes=56 Sequence=4 ttl=255 time=8 ms
+    Reply from 172.43.3.233: bytes=56 Sequence=5 ttl=255 time=8 ms
+
+  --- 172.43.3.233 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 7/27/95 ms
+
+
+5608T_BaraN(config)#telnet 172.43.3.233
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.233
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.233 ...
+  Connected to 172.43.3.233 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+5626FL-1*16>
+
+  User root has used a default password. Change the password in time.
+
+5626FL-1*16>enable
+
+5626FL-1*16#config
+
+5626FL-1*16(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif430        172.43.0.14/24        up          up
+vlanif433        172.43.3.233/24       up          up
+vlanif800        172.43.8.201/24       up          up
+
+5626FL-1*16(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.8.201
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.8.201
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.8.201 ...
+  Connected to 172.43.8.201 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+  -----------------------------------------------------------------------------
+  User last login information:
+  -----------------------------------------------------------------------------
+  Access Type : Telnet
+  IP-Address  : 172.43.3.250
+  Login  Time : 2023-09-19 17:59:30+08:00
+  Logout Time : 2023-09-19 17:59:54+08:00
+  -----------------------------------------------------------------------------
+
+5626FL-1*16>
+
+  User root has used a default password. Change the password in time.
+
+5626FL-1*16>enable
+
+5626FL-1*16#config
+
+5626FL-1*16(config)#interface vlanif 433
+
+5626FL-1*16(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL-1*16(config-if-vlanif433)#quit
+
+5626FL-1*16(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL-1*16(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL-1*16(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.233
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.233
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.233 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#ping 172.43.3.233
+  PING 172.43.3.233: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.233 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.234
+  PING 172.43.3.234: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.234: bytes=56 Sequence=1 ttl=64 time=6 ms
+    Reply from 172.43.3.234: bytes=56 Sequence=2 ttl=64 time=8 ms
+    Reply from 172.43.3.234: bytes=56 Sequence=3 ttl=64 time=7 ms
+    Reply from 172.43.3.234: bytes=56 Sequence=4 ttl=64 time=7 ms
+    Reply from 172.43.3.234: bytes=56 Sequence=5 ttl=64 time=7 ms
+
+  --- 172.43.3.234 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 6/7/8 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.235
+  PING 172.43.3.235: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.235 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.236
+  PING 172.43.3.236: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.236: bytes=56 Sequence=1 ttl=255 time=18 ms
+    Reply from 172.43.3.236: bytes=56 Sequence=2 ttl=255 time=7 ms
+    Reply from 172.43.3.236: bytes=56 Sequence=3 ttl=255 time=8 ms
+    Reply from 172.43.3.236: bytes=56 Sequence=4 ttl=255 time=8 ms
+    Reply from 172.43.3.236: bytes=56 Sequence=5 ttl=255 time=17 ms
+
+  --- 172.43.3.236 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 7/11/18 ms
+
+
+5608T_BaraN(config)#telnet 172.43.3.236
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.236
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.236 ...
+  Connected to 172.43.3.236 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2012. All rights reserved.
+
+
+5626FL-2>enable
+
+5626FL-2#config
+
+5626FL-2(config)#display ip interface brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+Interface                   IP Address      Physical Protocol Description
+meth0                       10.11.104.2     down     down     HUAWEI, SmartAX
+null0                       unassigned      up       up(s)    HUAWEI, SmartAX
+vlanif430                   172.43.0.13     up       up       HUAWEI, SmartAX
+vlanif433                   172.43.3.236    up       up       HUAWEI, SmartAX
+
+5626FL-2(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.13
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.13
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.13 ...
+  Connected to 172.43.0.13 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2012. All rights reserved.
+
+  -----------------------------------------------------------------------------
+  User last login information:
+  -----------------------------------------------------------------------------
+  Access Type: Telnet
+  IP-Address : 172.43.3.250
+  Time       : 2023-09-19 18:01:21+08:00
+  -----------------------------------------------------------------------------
+
+5626FL-2>enable
+
+5626FL-2#config
+
+5626FL-2(config)#interface vlanif 433
+
+5626FL-2(config-if-vlanif433)#undo ip address
+{ <cr>|ip_addr<I><X.X.X.X> }:
+
+  Command:
+          undo ip address
+
+5626FL-2(config-if-vlanif433)#quit
+
+5626FL-2(config)#save
+{ <cr>|configuration<K>|data<K> }:
+
+  Command:
+          save
+
+5626FL-2(config)#
+  It will take several minutes to save configuration file, please wait...
+
+5626FL-2(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#ping 172.43.3.236
+  PING 172.43.3.236: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.236 ping statistics ---
+    5 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.237
+  PING 172.43.3.237: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.237 ping statistics ---
+    4 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.238
+  PING 172.43.3.238: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.238 ping statistics ---
+    4 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.239
+  PING 172.43.3.239: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.239: bytes=56 Sequence=1 ttl=64 time=3 ms
+    Reply from 172.43.3.239: bytes=56 Sequence=2 ttl=64 time=3 ms
+    Reply from 172.43.3.239: bytes=56 Sequence=3 ttl=64 time=4 ms
+    Reply from 172.43.3.239: bytes=56 Sequence=4 ttl=64 time=3 ms
+    Reply from 172.43.3.239: bytes=56 Sequence=5 ttl=64 time=8 ms
+
+  --- 172.43.3.239 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 3/4/8 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.240
+  PING 172.43.3.240: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.240: bytes=56 Sequence=1 ttl=64 time=6 ms
+    Reply from 172.43.3.240: bytes=56 Sequence=2 ttl=64 time=3 ms
+    Reply from 172.43.3.240: bytes=56 Sequence=3 ttl=64 time=2 ms
+    Reply from 172.43.3.240: bytes=56 Sequence=4 ttl=64 time=3 ms
+    Reply from 172.43.3.240: bytes=56 Sequence=5 ttl=64 time=2 ms
+
+  --- 172.43.3.240 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/3/6 ms
+
+
+5608T_BaraN(config)#display ont info 0 all
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/0    0  485754437E749B58  active      offline  initial  initial  no
+  0/ 0/0    1  4857544388D5B89F  active      online   normal   match    no
+  0/ 0/0    2  4857544357650D28  active      online   normal   match    no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/0       0   TEST
+  0/ 0/0       1   MDUFL-3
+  0/ 0/0       2   MDU_FL-3*24
+  -----------------------------------------------------------------------------
+  In port 0/ 0/0 , the total of ONTs are: 3, online: 2
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/1    0  4857544337DBF441  active      online   normal   mismatch no
+  0/ 0/1    1  48575443DA512011  active      online   normal   match    no
+  0/ 0/1    2  48575443FDA8759D  active      online   normal   match    no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/1       0   Vahed_Mokhaberat
+  0/ 0/1       1   Mdu_T-1
+  0/ 0/1       2   MDUFL-1*16
+  -----------------------------------------------------------------------------
+  In port 0/ 0/1 , the total of ONTs are: 3, online: 3
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/2    0  4857544398F5714F  active      online   normal   match    no
+  0/ 0/2    2  48575443874BE19F  active      online   normal   match    no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/2       0   MDU-Fl0
+  0/ 0/2       2   MDU_FL0*24
+  -----------------------------------------------------------------------------
+  In port 0/ 0/2 , the total of ONTs are: 2, online: 2
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/3    0  485754437C912841  active      offline  initial  initial  no
+  0/ 0/3    1  48575443D3E44B41  active      offline  initial  initial  no
+  0/ 0/3    2  48575443AAAF9441  active      online   normal   mismatch no
+  0/ 0/3    3  48575443F25E7441  active      online   normal   mismatch no
+  0/ 0/3    4  48575443F697A141  active      online   normal   mismatch no
+  0/ 0/3    5  48575443E3387841  active      online   normal   mismatch no
+  0/ 0/3    6  485754433AD4C99E  active      online   normal   match    no
+  0/ 0/3    7  4857544330A8769E  active      online   normal   match    no
+  0/ 0/3    8  4857544398F41B4F  active      offline  initial  initial  no
+  0/ 0/3    9  485754433AD4BB9E  active      online   normal   match    no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/3       0   Vahed_101
+  0/ 0/3       1   Vahed_102
+  0/ 0/3       2   Vahed_201
+  0/ 0/3       3   Vahed_202
+  0/ 0/3       4   Vahed_203
+  0/ 0/3       5   Vahed_204
+  0/ 0/3       6   MDUFL1*24
+  0/ 0/3       7   Edari+1
+  0/ 0/3       8   MDU-FL_1*16
+  0/ 0/3       9   MDU-FL_1*24
+  -----------------------------------------------------------------------------
+  In port 0/ 0/3 , the total of ONTs are: 10, online: 7
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/4    0  485754438B7B6E15  active      online   normal   match    no
+  0/ 0/4    1  48575443E7E81341  active      online   normal   mismatch no
+  0/ 0/4    2  485754438B739941  active      online   normal   mismatch no
+  0/ 0/4    3  4857544323F55A41  active      online   normal   mismatch no
+  0/ 0/4    4  48575443B36D1641  active      offline  initial  initial  no
+  0/ 0/4    5  48575443C8A88641  active      online   normal   mismatch no
+  0/ 0/4    6  48575443B795B241  active      offline  initial  initial  no
+  0/ 0/4    7  4857544388743241  active      offline  initial  initial  no
+  0/ 0/4    8  4857544384D58F41  active      online   normal   mismatch no
+  0/ 0/4    9  48575443ADF7FB41  active      offline  initial  initial  no
+  0/ 0/4   10  485754433AD4669E  active      online   normal   match    no
+  0/ 0/4   11  485754439898869E  active      online   normal   match    no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/4       0   MDU-FL3
+  0/ 0/4       1   DATA_CENTER_BARAN3
+  0/ 0/4       2   Vahed_404
+  0/ 0/4       3   Vahed_304
+  0/ 0/4       4   Vahed_301
+  0/ 0/4       5   Vahed_302
+  0/ 0/4       6   Vahed_303
+  0/ 0/4       7   Vahed_401
+  0/ 0/4       8   Vahed_402
+  0/ 0/4       9   Vahed_403
+  0/ 0/4      10   MDU_FL3
+  0/ 0/4      11   MDU_FL3
+  -----------------------------------------------------------------------------
+  In port 0/ 0/4 , the total of ONTs are: 12, online: 8
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/5    0  4857544335B39A41  active      online   normal   mismatch no
+  0/ 0/5    1  4857544330A8CF9E  active      online   normal   match    no
+  0/ 0/5    2  48575443874BDC9F  active      online   normal   match    no
+  0/ 0/5    3  48575443FDA8B89D  active      online   normal   match    no
+  0/ 0/5    4  485754436889DC41  active      offline  initial  initial  no
+  0/ 0/5    5  485754439B9FA641  active      offline  initial  initial  no
+  0/ 0/5    6  48575443A9E9EC41  active      online   normal   mismatch no
+  0/ 0/5    7  48575443E5BB8A41  active      offline  initial  initial  no
+  0/ 0/5    8  4857544324DE9E41  active      online   normal   mismatch no
+  0/ 0/5    9  48575443A69DC141  active      offline  initial  initial  no
+  0/ 0/5   10  485754435A545741  active      offline  initial  initial  no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/5       0   Vahed_601
+  0/ 0/5       1   mdufl5
+  0/ 0/5       2   mdufl5
+  0/ 0/5       3   mdufl5
+  0/ 0/5       4   Vahed_504
+  0/ 0/5       5   Vahed_501
+  0/ 0/5       6   Vahed_503
+  0/ 0/5       7   Vahed_502
+  0/ 0/5       8   Vahed_602
+  0/ 0/5       9   Vahed_603
+  0/ 0/5      10   Vahed_604
+  -----------------------------------------------------------------------------
+  In port 0/ 0/5 , the total of ONTs are: 11, online: 6
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/6    0  485754437AF1EB41  active      offline  initial  initial  no
+  0/ 0/6    1  485754432271FA41  active      offline  initial  initial  no
+  0/ 0/6    2  48575443FB5DE441  active      offline  initial  initial  no
+  0/ 0/6    3  48575443AC7E8641  active      online   normal   mismatch no
+  0/ 0/6    4  4857544330A8CB9E  active      online   normal   match    no
+  0/ 0/6    5  4857544363FAED9F  active      online   normal   match    no
+  0/ 0/6    6  485754434A499D41  active      offline  initial  initial  no
+  0/ 0/6    7  4857544310217CA0  active      online   normal   match    no
+  0/ 0/6    8  485754432D7C8B41  active      offline  initial  initial  no
+  0/ 0/6    9  48575443941C1A41  active      online   normal   mismatch no
+  0/ 0/6   10  48575443DEDE2B41  active      online   normal   mismatch no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/6       0   Vahed_703
+  0/ 0/6       1   Vahed_702
+  0/ 0/6       2   Vahed_701
+  0/ 0/6       3   Vahed_804
+  0/ 0/6       4   MDU_FL7
+  0/ 0/6       5   MDU_FL7
+  0/ 0/6       6   Vahed_704
+  0/ 0/6       7   mdufl7
+  0/ 0/6       8   Vahed_802
+  0/ 0/6       9   Vahed_803
+  0/ 0/6      10   Vahed_801
+  -----------------------------------------------------------------------------
+  In port 0/ 0/6 , the total of ONTs are: 11, online: 6
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/7    0  485754435BF29541  active      offline  initial  initial  no
+  0/ 0/7    1  48575443E7531F41  active      online   normal   mismatch no
+  0/ 0/7    2  4857544330A8AC9E  active      online   normal   match    no
+  0/ 0/7    3  48575443874BE09F  active      online   normal   match    no
+  0/ 0/7    4  48575443FDA8AD9D  active      online   normal   match    no
+  0/ 0/7    5  48575443887B2E41  active      online   normal   mismatch no
+  0/ 0/7    6  485754432DA2E641  active      online   normal   mismatch no
+  0/ 0/7    7  4857544334E9B441  active      offline  initial  initial  no
+  0/ 0/7    8  48575443FE357641  active      online   normal   mismatch no
+  0/ 0/7    9  48575443422D4E41  active      online   normal   mismatch no
+  0/ 0/7   10  485754439BD39A41  active      offline  initial  initial  no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/7       0   Vahed_1002
+  0/ 0/7       1   Vahed_903
+  0/ 0/7       2   mdufl9
+  0/ 0/7       3   mdufl9
+  0/ 0/7       4   mdufl9
+  0/ 0/7       5   Vahed_1001
+  0/ 0/7       6   Vahed_1003
+  0/ 0/7       7   Vahed_901
+  0/ 0/7       8   Vahed_902
+  0/ 0/7       9   Vahed_904
+  0/ 0/7      10   Vahed_1004
+  -----------------------------------------------------------------------------
+  In port 0/ 0/7 , the total of ONTs are: 11, online: 8
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/8    0  48575443874BD39F  active      online   normal   match    no
+  0/ 0/8    1  485754439898899E  active      online   normal   match    no
+  0/ 0/8    2  48575443FDA9109D  active      online   normal   match    no
+  0/ 0/8    3  4857544317037D9C  active      online   normal   mismatch no
+  0/ 0/8    4  48575443C393C741  active      online   normal   mismatch no
+  0/ 0/8    5  48575443C3941B41  active      offline  initial  initial  no
+  0/ 0/8    6  48575443CD946241  active      offline  initial  initial  no
+  0/ 0/8    7  48575443B6D95D41  active      offline  initial  initial  no
+  0/ 0/8    8  485754432CADA441  active      offline  initial  initial  no
+  0/ 0/8    9  485754436EE41241  active      offline  initial  initial  no
+  0/ 0/8   10  4857544371F9C441  active      offline  initial  initial  no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/8       0   ONT_NO_DESCRIPTION
+  0/ 0/8       1   ONT_NO_DESCRIPTION
+  0/ 0/8       2   MDU_FL11*16-CCTV
+  0/ 0/8       3   Vahed_1201
+  0/ 0/8       4   Vahed_1101
+  0/ 0/8       5   Vahed_1102
+  0/ 0/8       6   Vahed_1103
+  0/ 0/8       7   Vahed_1104
+  0/ 0/8       8   Vahed_1203
+  0/ 0/8       9   Vahed_1204
+  0/ 0/8      10   Vahed_1201
+  -----------------------------------------------------------------------------
+  In port 0/ 0/8 , the total of ONTs are: 11, online: 5
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/9    0  485754432F398E41  active      online   normal   mismatch no
+  0/ 0/9    1  4857544356A84941  active      online   normal   mismatch no
+  0/ 0/9    2  48575443486F8F41  active      offline  initial  initial  no
+  0/ 0/9    3  48575443874BF79F  active      online   normal   match    no
+  0/ 0/9    4  485754433939F97D  active      online   normal   match    no
+  0/ 0/9    5  485754433AD4829E  active      online   normal   match    no
+  0/ 0/9    6  4857544321747841  active      offline  initial  initial  no
+  0/ 0/9    7  48575443E48CB341  active      offline  initial  initial  no
+  0/ 0/9    8  485754431C38D941  active      offline  initial  initial  no
+  0/ 0/9    9  48575443B2D48541  active      offline  initial  initial  no
+  0/ 0/9   10  485754434FACA141  active      offline  initial  initial  no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/9       0   Vahed_1303
+  0/ 0/9       1   Vahed_1402
+  0/ 0/9       2   Vahed_1404
+  0/ 0/9       3   MDU-FL13-24
+  0/ 0/9       4   MDU-FL13-16
+  0/ 0/9       5   MDU-FL13-24
+  0/ 0/9       6   Vahed_1403
+  0/ 0/9       7   Vahed_1301
+  0/ 0/9       8   Vahed_1302
+  0/ 0/9       9   Vahed_1304
+  0/ 0/9      10   Vahed_1401
+  -----------------------------------------------------------------------------
+  In port 0/ 0/9 , the total of ONTs are: 11, online: 5
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/10   0  48575443A8C3A641  active      online   normal   mismatch no
+  0/ 0/10   1  4857544388D5939F  active      online   normal   match    no
+  0/ 0/10   2  48575443874BDA9F  active      online   normal   match    no
+  0/ 0/10   3  4857544330A8B09E  active      online   normal   match    no
+  0/ 0/10   4  4857544346C94941  active      offline  initial  initial  no
+  0/ 0/10   5  48575443DBFCB841  active      offline  initial  initial  no
+  0/ 0/10   6  48575443F516B841  active      offline  initial  initial  no
+  0/ 0/10   7  485754438EAD7641  active      offline  initial  initial  no
+  0/ 0/10   8  4857544396CAAD41  active      offline  initial  initial  no
+  0/ 0/10   9  48575443BD2BB241  active      online   normal   mismatch no
+  0/ 0/10  10  485754433F7ED241  active      online   normal   mismatch no
+  0/ 0/10  11  48575443988AEDA3  active      online   normal   mismatch no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/10      0   Vahed_1602
+  0/ 0/10      1   MDUFL15*16
+  0/ 0/10      2   MDUFL15*24-2
+  0/ 0/10      3   MDUFL15*24-1
+  0/ 0/10      4   Vahed_1501
+  0/ 0/10      5   Vahed_1502
+  0/ 0/10      6   Vahed_1503
+  0/ 0/10      7   Vahed_1504
+  0/ 0/10      8   Vahed_1601
+  0/ 0/10      9   Vahed_1603
+  0/ 0/10     10   Vahed_1604
+  0/ 0/10     11   5199902279-U1601
+  -----------------------------------------------------------------------------
+  In port 0/ 0/10, the total of ONTs are: 12, online: 7
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/11   0  48575443874BCB9F  active      online   normal   match    no
+  0/ 0/11   1  4857544313880FA0  active      online   normal   match    no
+  0/ 0/11   2  48575443FDA9229D  active      online   normal   match    no
+  0/ 0/11   3  485754436B518641  active      online   normal   mismatch no
+  0/ 0/11   4  485754437A381141  active      online   normal   mismatch no
+  0/ 0/11   5  4857544335684941  active      online   normal   mismatch no
+  0/ 0/11   6  4857544344B61341  active      offline  initial  initial  no
+  0/ 0/11   7  4857544363F73D41  active      offline  initial  initial  no
+  0/ 0/11   8  48575443BE722141  active      offline  initial  initial  no
+  0/ 0/11   9  4857544348AFD441  active      online   normal   mismatch no
+  0/ 0/11  10  485754431A7D1941  active      offline  initial  initial  no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/11      0   MDU-FL17-24
+  0/ 0/11      1   MDU-FL17-24
+  0/ 0/11      2   MDU-FL17-16
+  0/ 0/11      3   Vahed_1804
+  0/ 0/11      4   Vahed_1704
+  0/ 0/11      5   Vahed_1803
+  0/ 0/11      6   Vahed_1702
+  0/ 0/11      7   Vahed_1703
+  0/ 0/11      8   Vahed_1801
+  0/ 0/11      9   Vahed_1802
+  0/ 0/11     10   Vahed_1701
+  -----------------------------------------------------------------------------
+  In port 0/ 0/11, the total of ONTs are: 11, online: 7
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/12   0  4857544363FA9F9F  active      online   normal   match    no
+  0/ 0/12   1  48575443138819A0  active      online   normal   match    no
+  0/ 0/12   2  485754432D4F50A0  active      online   normal   match    no
+  0/ 0/12   3  48575443CBE8BD41  active      offline  initial  initial  no
+  0/ 0/12   4  4857544332D5BF41  active      offline  initial  initial  no
+  0/ 0/12   5  48575443CD3B6C41  active      offline  initial  initial  no
+  0/ 0/12   6  48575443FDEA8841  active      online   normal   mismatch no
+  0/ 0/12   7  48575443576FF641  active      offline  initial  initial  no
+  0/ 0/12   8  485754436DE93C41  active      online   normal   mismatch no
+  0/ 0/12   9  4857544316913141  active      offline  initial  initial  no
+  0/ 0/12  10  485754434EA8B341  active      online   normal   mismatch no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/12      0   MDUFL_19*16
+  0/ 0/12      1   MDUFL19*24-1
+  0/ 0/12      2   MDUFL19*24-2
+  0/ 0/12      3   Vahed_1901
+  0/ 0/12      4   Vahed_1902
+  0/ 0/12      5   Vahed_1903
+  0/ 0/12      6   Vahed_1904
+  0/ 0/12      7   Vahed_2001
+  0/ 0/12      8   Vahed_2002
+  0/ 0/12      9   Vahed_2003
+  0/ 0/12     10   Vahed_2004
+  -----------------------------------------------------------------------------
+  In port 0/ 0/12, the total of ONTs are: 11, online: 6
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/13   0  48575443D285E941  active      offline  initial  initial  no
+  0/ 0/13   1  48575443633D8A41  active      offline  initial  initial  no
+  0/ 0/13   2  485754434CC1AC41  active      offline  initial  initial  no
+  0/ 0/13   3  48575443422D8441  active      offline  initial  initial  no
+  0/ 0/13   4  485754434651B441  active      offline  initial  initial  no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/13      0   Vahed_2101
+  0/ 0/13      1   Vahed_2102
+  0/ 0/13      2   Vahed_2103
+  0/ 0/13      3   Vahed_2201
+  0/ 0/13      4   Vahed_2202
+  -----------------------------------------------------------------------------
+  In port 0/ 0/13, the total of ONTs are: 5, online: 0
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/14   0  48575443874BD59F  active      online   normal   match    no
+  0/ 0/14   1  4857544398562941  active      offline  initial  initial  no
+  0/ 0/14   2  48575443D4FE4341  active      offline  initial  initial  no
+  0/ 0/14   3  48575443C1DBC341  active      offline  initial  initial  no
+  0/ 0/14   4  485754433FE7C441  active      offline  initial  initial  no
+  0/ 0/14   5  485754439667FEA3  active      online   normal   mismatch no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/14      0   MDU_25
+  0/ 0/14      1   Vahed_2301
+  0/ 0/14      2   Vahed_2302
+  0/ 0/14      3   Vahed_2401
+  0/ 0/14      4   Vahed_2402
+  0/ 0/14      5   1402-2-19
+  -----------------------------------------------------------------------------
+  In port 0/ 0/14, the total of ONTs are: 6, online: 2
+  -----------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------
+  F/S/P   ONT         SN         Control     Run      Config   Match    Protect
+          ID                     flag        state    state    state    side
+  -----------------------------------------------------------------------------
+  0/ 0/15   0  485754433AD4979E  active      online   normal   match    no
+  0/ 0/15   1  48575443874BF69F  active      online   normal   match    no
+  -----------------------------------------------------------------------------
+  F/S/P   ONT-ID   Description
+  -----------------------------------------------------------------------------
+  0/ 0/15      0   MDUFL-5*24
+  0/ 0/15      1   MDUFL-4*24
+  -----------------------------------------------------------------------------
+  In port 0/ 0/15, the total of ONTs are: 2, online: 2
+  -----------------------------------------------------------------------------
+
+5608T_BaraN(config)#service-port  vlan 430 gpon 0/0/8 ont 2 gemport 1 multi-service user-vlan  430 tag-transform translate
+{ <cr>|bundle<K>|inbound<K>|rx-cttr<K> }:inbound traffic-table index 6 outbound traffic-table index 6
+
+  Command:
+          service-port  vlan 430 gpon 0/0/8 ont 2 gemport 1 multi-service user-vlan  430 tag-transform translate inbound traffic-table index 6 outbound traffic-table index 6
+  Failure: Service virtual port has existed already
+  Conflicted service virtual port index: 199
+
+5608T_BaraN(config)#ping 172.43.0.37
+  PING 172.43.0.37: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.0.37 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.0.38
+  PING 172.43.0.38: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.0.38: bytes=56 Sequence=1 ttl=255 time=20 ms
+    Reply from 172.43.0.38: bytes=56 Sequence=2 ttl=255 time=9 ms
+    Reply from 172.43.0.38: bytes=56 Sequence=3 ttl=255 time=9 ms
+    Reply from 172.43.0.38: bytes=56 Sequence=4 ttl=255 time=9 ms
+    Reply from 172.43.0.38: bytes=56 Sequence=5 ttl=255 time=47 ms
+
+  --- 172.43.0.38 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 9/18/47 ms
+
+
+5608T_BaraN(config)#telnet 172.43.0.39
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.39
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.39 ...
+  Connected to 172.43.0.39 ...
+>>User name:root
+>>User password:
+
+
+  Huawei Integrated Access Software (MA5626).
+  Copyright(C) Huawei Technologies Co., Ltd. 2002-2013. All rights reserved.
+
+
+MDU-FL13*24-2>
+
+  User root has used a default password. Change the password in time.
+
+MDU-FL13*24-2>enable
+
+MDU-FL13*24-2#config
+
+MDU-FL13*24-2(config)#display ip interface  brief
+{ <cr>|meth<K>|null<K>|vlanif<K> }:
+
+  Command:
+          display ip interface  brief
+*down: administratively down
+(l): loopback
+(s): spoofing
+
+The number of interface that is UP in Physical is 4
+The number of interface that is DOWN in Physical is 1
+The number of interface that is UP in Protocol is 4
+The number of interface that is DOWN in Protocol is 1
+
+Interface        IP Address/Mask       Physical    Protocol
+meth0            10.11.104.2/24        down        down
+null0            unassigned            up          up(s)
+vlanif430        172.43.0.39/24        up          up
+vlanif436        172.43.6.217/24       up          up
+vlanif800        172.43.8.217/24       up          up
+
+MDU-FL13*24-2(config)#configq
+                      ^
+  % Unknown command, the error locates at '^'
+
+MDU-FL13*24-2(config)#
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.0.39
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.0.39
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.0.39 ...
+  Connected to 172.43.0.39 ...
+>>User name:
+
+  Configuration console exit, please retry to log on
+
+  The connection was closed by the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#telnet 172.43.3.228
+{ <cr>|service-port<U><1,65535> }:
+
+  Command:
+          telnet 172.43.3.228
+  Press CTRL_] to quit telnet mode
+  Trying 172.43.3.228 ...
+  Failure: Can't connect to the remote host
+
+5608T_BaraN(config)#ping 172.43.3.229
+  PING 172.43.3.229: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.229: bytes=56 Sequence=1 ttl=64 time=7 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=2 ttl=64 time=4 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=3 ttl=64 time=7 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=4 ttl=64 time=8 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=5 ttl=64 time=2 ms
+
+  --- 172.43.3.229 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/5/8 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.228
+  PING 172.43.3.228: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.228 ping statistics ---
+    5 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.228
+  PING 172.43.3.228: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.228 ping statistics ---
+    5 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.229
+  PING 172.43.3.229: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.229: bytes=56 Sequence=1 ttl=64 time=7 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=2 ttl=64 time=7 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=3 ttl=64 time=3 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=4 ttl=64 time=7 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=5 ttl=64 time=5 ms
+
+  --- 172.43.3.229 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 3/5/7 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.220
+  PING 172.43.3.220: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.220 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.221
+  PING 172.43.3.221: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+
+  --- 172.43.3.221 ping statistics ---
+    2 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.222
+  PING 172.43.3.222: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.222 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.223
+  PING 172.43.3.223: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.223: bytes=56 Sequence=1 ttl=64 time=5 ms
+    Reply from 172.43.3.223: bytes=56 Sequence=2 ttl=64 time=8 ms
+    Reply from 172.43.3.223: bytes=56 Sequence=3 ttl=64 time=7 ms
+    Reply from 172.43.3.223: bytes=56 Sequence=4 ttl=64 time=7 ms
+    Reply from 172.43.3.223: bytes=56 Sequence=5 ttl=64 time=5 ms
+
+  --- 172.43.3.223 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 5/6/8 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.224
+  PING 172.43.3.224: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.224: bytes=56 Sequence=1 ttl=64 time=8 ms
+    Reply from 172.43.3.224: bytes=56 Sequence=2 ttl=64 time=6 ms
+    Reply from 172.43.3.224: bytes=56 Sequence=3 ttl=64 time=4 ms
+    Reply from 172.43.3.224: bytes=56 Sequence=4 ttl=64 time=8 ms
+    Reply from 172.43.3.224: bytes=56 Sequence=5 ttl=64 time=7 ms
+
+  --- 172.43.3.224 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 4/6/8 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.225
+  PING 172.43.3.225: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.225: bytes=56 Sequence=1 ttl=64 time=9 ms
+    Reply from 172.43.3.225: bytes=56 Sequence=2 ttl=64 time=6 ms
+    Reply from 172.43.3.225: bytes=56 Sequence=3 ttl=64 time=7 ms
+    Reply from 172.43.3.225: bytes=56 Sequence=4 ttl=64 time=6 ms
+    Reply from 172.43.3.225: bytes=56 Sequence=5 ttl=64 time=4 ms
+
+  --- 172.43.3.225 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 4/6/9 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.226
+  PING 172.43.3.226: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.226: bytes=56 Sequence=1 ttl=64 time=2 ms
+    Reply from 172.43.3.226: bytes=56 Sequence=2 ttl=64 time=2 ms
+    Reply from 172.43.3.226: bytes=56 Sequence=3 ttl=64 time=4 ms
+    Reply from 172.43.3.226: bytes=56 Sequence=4 ttl=64 time=2 ms
+    Reply from 172.43.3.226: bytes=56 Sequence=5 ttl=64 time=5 ms
+
+  --- 172.43.3.226 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/3/5 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.227
+  PING 172.43.3.227: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.227: bytes=56 Sequence=1 ttl=64 time=2 ms
+    Reply from 172.43.3.227: bytes=56 Sequence=2 ttl=64 time=3 ms
+    Reply from 172.43.3.227: bytes=56 Sequence=3 ttl=64 time=3 ms
+    Reply from 172.43.3.227: bytes=56 Sequence=4 ttl=64 time=3 ms
+    Reply from 172.43.3.227: bytes=56 Sequence=5 ttl=64 time=3 ms
+
+  --- 172.43.3.227 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/2/3 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.228
+  PING 172.43.3.228: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.228 ping statistics ---
+    4 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.229
+  PING 172.43.3.229: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.229: bytes=56 Sequence=1 ttl=64 time=8 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=2 ttl=64 time=4 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=3 ttl=64 time=9 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=4 ttl=64 time=7 ms
+    Reply from 172.43.3.229: bytes=56 Sequence=5 ttl=64 time=8 ms
+
+  --- 172.43.3.229 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 4/7/9 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.230
+  PING 172.43.3.230: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.230: bytes=56 Sequence=1 ttl=64 time=4 ms
+    Reply from 172.43.3.230: bytes=56 Sequence=2 ttl=64 time=8 ms
+    Reply from 172.43.3.230: bytes=56 Sequence=3 ttl=64 time=7 ms
+    Reply from 172.43.3.230: bytes=56 Sequence=4 ttl=64 time=8 ms
+    Reply from 172.43.3.230: bytes=56 Sequence=5 ttl=64 time=8 ms
+
+  --- 172.43.3.230 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 4/7/8 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.231
+  PING 172.43.3.231: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.231: bytes=56 Sequence=1 ttl=64 time=2 ms
+    Reply from 172.43.3.231: bytes=56 Sequence=2 ttl=64 time=9 ms
+    Reply from 172.43.3.231: bytes=56 Sequence=3 ttl=64 time=2 ms
+    Reply from 172.43.3.231: bytes=56 Sequence=4 ttl=64 time=3 ms
+    Reply from 172.43.3.231: bytes=56 Sequence=5 ttl=64 time=8 ms
+
+  --- 172.43.3.231 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/4/9 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.232
+  PING 172.43.3.232: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.232 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.233
+  PING 172.43.3.233: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.233 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.234
+  PING 172.43.3.234: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.234: bytes=56 Sequence=1 ttl=64 time=10 ms
+    Reply from 172.43.3.234: bytes=56 Sequence=2 ttl=64 time=7 ms
+    Reply from 172.43.3.234: bytes=56 Sequence=3 ttl=64 time=8 ms
+    Reply from 172.43.3.234: bytes=56 Sequence=4 ttl=64 time=7 ms
+    Reply from 172.43.3.234: bytes=56 Sequence=5 ttl=64 time=8 ms
+
+  --- 172.43.3.234 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 7/8/10 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.235
+  PING 172.43.3.235: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.235 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.236
+  PING 172.43.3.236: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.236 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.237
+  PING 172.43.3.237: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.237 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.238
+  PING 172.43.3.238: 56  data bytes, press CTRL_C to break
+    Request time out
+    Request time out
+    Request time out
+
+  --- 172.43.3.238 ping statistics ---
+    3 packet(s) transmitted
+    0 packet(s) received
+    100.00% packet loss
+
+
+5608T_BaraN(config)#ping 172.43.3.239
+  PING 172.43.3.239: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.239: bytes=56 Sequence=1 ttl=64 time=9 ms
+    Reply from 172.43.3.239: bytes=56 Sequence=2 ttl=64 time=7 ms
+    Reply from 172.43.3.239: bytes=56 Sequence=3 ttl=64 time=7 ms
+    Reply from 172.43.3.239: bytes=56 Sequence=4 ttl=64 time=8 ms
+    Reply from 172.43.3.239: bytes=56 Sequence=5 ttl=64 time=2 ms
+
+  --- 172.43.3.239 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/6/9 ms
+
+
+5608T_BaraN(config)#ping 172.43.3.240
+  PING 172.43.3.240: 56  data bytes, press CTRL_C to break
+    Reply from 172.43.3.240: bytes=56 Sequence=1 ttl=64 time=7 ms
+    Reply from 172.43.3.240: bytes=56 Sequence=2 ttl=64 time=3 ms
+    Reply from 172.43.3.240: bytes=56 Sequence=3 ttl=64 time=3 ms
+    Reply from 172.43.3.240: bytes=56 Sequence=4 ttl=64 time=2 ms
+    Reply from 172.43.3.240: bytes=56 Sequence=5 ttl=64 time=3 ms
+
+  --- 172.43.3.240 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 2/3/7 ms
+
+
+5608T_BaraN(config)#
